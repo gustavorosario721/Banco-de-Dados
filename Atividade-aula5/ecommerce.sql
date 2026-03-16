@@ -32,6 +32,5 @@ create table itenspedido(
     id_pedido int,
     quantidade int,
     foreign key(id_produto) references produto(id),
-    foreign key(preco_produto) references produto(preco),
     foreign key(id_pedido) references pedido(id)
 );
